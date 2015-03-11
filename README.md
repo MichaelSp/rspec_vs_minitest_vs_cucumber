@@ -8,7 +8,7 @@ Compare the performance of:
 My Results
 ----------
 ```bash
-$ ruby spec/test_bench.rb
+$ ruby compare.rb
                  user     system      total        real
 minitest:    0.290000   9.100000   9.390000 ( 20.434662)
 cucumber:  129.250000  99.400000 228.650000 (397.114944)
