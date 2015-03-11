@@ -1,9 +1,9 @@
 Rspec vs Minitest vs Cucumber
 ============================
 Compare the performance of:
-	* Rspec
-	* Minitest
-	* Cucumber
+* Rspec
+* Minitest
+* Cucumber
 	
 My Results
 ----------
