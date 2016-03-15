@@ -8,4 +8,3 @@ Cucumber.logger = configuration.log
 
 runtime = Cucumber::Runtime.new(configuration)
 runtime.run!
-runtime.write_stepdefs_json

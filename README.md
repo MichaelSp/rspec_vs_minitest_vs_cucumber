@@ -5,7 +5,17 @@ Compare the performance of:
 * Minitest
 * Cucumber
 	
-My Results
+My Results (2016)
+----------
+```bash
+$ ruby compare.rb
+                user     system      total        real
+cucumber:  322.370000  17.200000  339.570000  (339.631249)
+minitest:    7.050000   3.190000   10.240000  ( 10.243859)
+rspec:    3481.360000  11.540000 3492.900000 (3493.590699)
+```
+	
+My Results (2015)
 ----------
 ```bash
 $ ruby compare.rb
@@ -51,7 +61,6 @@ Cucumber.logger = configuration.log
 
 runtime = Cucumber::Runtime.new(configuration)
 runtime.run!
-runtime.write_stepdefs_json
 ```
 
 truth.feature
