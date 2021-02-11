@@ -2,7 +2,7 @@ require 'rspec'
 require 'rspec/autorun'
 
 RSpec.describe "Truth" do
-  it 'should be true' do
-    true.should == true
+  it 'is expected be true' do
+    expect(true).to eq true
   end
 end
