@@ -38,11 +38,13 @@ rspec:      53.560000   8.290000  61.850000 ( 78.028591)
 Rspec
 -------
 ```ruby
-require 'rspec'
+require 'rspec/core'
+require 'rspec/expectations'
+require 'rspec/autorun'
 
 RSpec.describe "Truth" do
-  it 'should be true' do
-    true.should == true
+  it 'is expected be true' do
+    expect(true).to eq true
   end
 end
 ```
