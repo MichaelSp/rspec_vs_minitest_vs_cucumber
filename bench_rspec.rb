@@ -1,4 +1,5 @@
-require 'rspec'
+require 'rspec/core'
+require 'rspec/expectations'
 require 'rspec/autorun'
 
 RSpec.describe "Truth" do
