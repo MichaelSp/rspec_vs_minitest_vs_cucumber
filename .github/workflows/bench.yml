@@ -3,7 +3,9 @@ name: Benchmark
 on:
   push:
     branches: [ master ]
-
+  #schedule:
+  #  - cron:  '1 1 1 1,5,7,9,11 *'
+  workflow_dispatch:
 
 jobs:
   test:
