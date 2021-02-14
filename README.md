@@ -4,6 +4,7 @@ Compare the performance of:
 * [Rspec](http://rspec.info/)
 * [Minitest](https://github.com/seattlerb/minitest)
 * [Cucumber](https://cucumber.io/)
+* [Test-Bench](http://test-bench.software/)
 
 My Results (2020)
 ----------
@@ -30,8 +31,8 @@ My Results (2015)
 ```bash
 $ ruby compare.rb
                  user     system      total        real
-minitest:    0.290000   9.100000   9.390000 ( 20.434662)
 cucumber:  129.250000  99.400000 228.650000 (397.114944)
+minitest:    0.290000   9.100000   9.390000 ( 20.434662)
 rspec:      53.560000   8.290000  61.850000 ( 78.028591)
 ```
 	
@@ -73,6 +74,20 @@ Cucumber.logger = configuration.log
 
 runtime = Cucumber::Runtime.new(configuration)
 runtime.run!
+```
+
+Test Bench
+----------
+```ruby
+require 'test_bench'
+
+TestBench.output = []
+
+TestBench.context "Truth" do
+  test "if it is true" do
+    assert(true)
+  end
+end
 ```
 
 ### truth.feature
