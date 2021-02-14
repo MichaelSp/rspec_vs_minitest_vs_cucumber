@@ -6,10 +6,42 @@ Compare the performance of:
 * [Cucumber](https://cucumber.io/)
 * [Test-Bench](http://test-bench.software/)
 
+My Results (2021)
+----------
+### [Ruby 3.0](https://github.com/MichaelSp/rspec_vs_minitest_vs_cucumber/runs/1897674069?check_suite_focus=true#step:4:1)
+
+```bash
+$ bundle exec ruby ./compare.rb
+                 user     system      total        real
+cucumber:   585.035884  22.566803  607.602687 ( 608.237973)
+minitest:    18.208514   7.893526   26.102040 (  26.430622)
+rspec:     2406.162561  12.497706 2418.660267 (2418.889164)
+test_bench:  29.517226   8.272563   37.789789 (  38.133189)
+```
+### [Ruby 2.7](https://github.com/MichaelSp/rspec_vs_minitest_vs_cucumber/runs/1897674056?check_suite_focus=true#step:4:1)
+```bash
+$ bundle exec ruby ./compare.rb
+                 user     system      total        real
+cucumber:   609.940791  22.444036  632.384827 ( 632.617040)
+minitest:    17.570423   7.825259   25.395682 (  25.692178)
+rspec:     2354.763935  11.834844 2366.598779 (2366.766677)
+test_bench:  32.259550   8.150808   40.410358 (  40.712839)
+```
+
+### [Ruby 2.6](https://github.com/MichaelSp/rspec_vs_minitest_vs_cucumber/runs/1897674050?check_suite_focus=true#step:4:1)
+```bash
+$ bundle exec ruby ./compare.rb
+                 user     system      total        real
+cucumber:  595.237425  23.425310  618.662735 ( 619.132716)
+minitest:   18.058032   8.398094   26.456126 (  26.830221)
+rspec:    2876.319241  15.381610 2891.700851 (2891.977532)
+test_bench: 33.081621   9.381987   42.463608 (  43.007690)
+```
+
 My Results (2020)
 ----------
 ````bash
-$ ruby compare.rb                                                                                                                                                            ✔  3.79 L
+$ ruby compare.rb                                                                                                                                                           
                  user     system      total        real
 cucumber:   591.710177 168.260276  759.970453  (762.636717)
 minitest:    55.275738  58.717117  113.992855  (114.333114)
